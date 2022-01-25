@@ -3,11 +3,21 @@ package templates;
 import java.time.LocalDate;
 
 /**
- *
- * @author onlyb
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * @author Luis Roberto Cruz                                                         *
+ * @version 1.0.0                                                                    *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * The class represents a person with it's base attributes for Argentina. The Unique *
+ * Labor Identification Code attribute may be subject to change due to nationality.  *
+ * So it may be.that in other countries this attribute does't exist, has another     *
+ * utility or uses other different data type.                                        *
+ * The attribute "document" identifies each instance of this class making it unique. *
+ * so it well be the main way to identify and compare one instance to another.       *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 public class Person {
     
+    //Variables
     private int document;
     private int uniqueLaborIdentificationCode;
     private String lastName;
@@ -17,6 +27,7 @@ public class Person {
     private LocalDate dateOfBirth;
     private char sex;
 
+    //Default constructor
     public Person() {
         this.document = 0;
         this.uniqueLaborIdentificationCode = 0;
@@ -28,6 +39,7 @@ public class Person {
         this.sex = ' ';
     }
 
+    //Main constructor for this class
     public Person(int document, int uniqueLaborIdentificationCode, String lastName, String firtName, String nationality, String residence, LocalDate dateOfBirth, char sex) {
         this.document = document;
         this.uniqueLaborIdentificationCode = uniqueLaborIdentificationCode;
