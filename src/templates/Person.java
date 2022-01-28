@@ -5,7 +5,7 @@ import java.time.LocalDate;
 /**
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
  * @author Luis Roberto Cruz                                                         *
- * @version 1.0.0                                                                    *
+ * @version 1.0.1                                                                    *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * The class represents a person with it's base attributes for Argentina. The Unique *
  * Labor Identification Code attribute may be subject to change due to nationality.  *
@@ -50,7 +50,18 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
         this.sex = sex;
     }
-
+    
+    //Constructor with out Unique Labor Identification Code
+    public Person(int document, String lastName, String firtName, String nationality, String residence, LocalDate dateOfBirth, char sex) {
+        this.document = document;
+        this.lastName = lastName;
+        this.firtName = firtName;
+        this.nationality = nationality;
+        this.residence = residence;
+        this.dateOfBirth = dateOfBirth;
+        this.sex = sex;
+    }
+    
     public int getDocument() {
         return document;
     }
